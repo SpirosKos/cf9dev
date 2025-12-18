@@ -22,7 +22,7 @@ public class SingleList<T> {
         }
         Node<T> n;
 
-        for (n == head; n.getNext() != null; n = n.getNext());
+        for (n = head; n.getNext() != null; n = n.getNext());
         n.setNext(tmp);
     }
 
