@@ -10,6 +10,10 @@ public class SingleList<T> {
         head = tmp;
     }
 
+    /**
+     * Time-complexity O(n)
+     * @param t
+     */
     public void insertLast(T t) {
 
         Node<T> tmp = new Node<T>();
