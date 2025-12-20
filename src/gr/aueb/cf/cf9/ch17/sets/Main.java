@@ -13,7 +13,8 @@ public class Main {
         bag.add("kiwi");
         bag.add("banana");
 
-        if (bag.contains("apple")) {    //override equals
+        // Time-complexity O(1)
+        if (bag.contains("apple")) {    //override equals && hashCode
             bag.remove("apple");
         }else {
             System.out.println("Not found");
