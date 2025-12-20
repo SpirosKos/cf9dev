@@ -1,7 +1,5 @@
 package gr.aueb.cf.cf9.solutions.ch13;
 
-import java.util.Arrays;
-
 public class MathHelper {
 
     private MathHelper(){
@@ -13,15 +11,17 @@ public class MathHelper {
      * @param arr   Int Array
      * @return      Max number
      */
-    public static int maxInt(int arr[]){
+    public static double maxInt(int arr[]){
 
         if (arr == null || arr.length == 0){
             throw new IllegalArgumentException("Array should not be empty");
         }
 
-        Arrays.sort(arr);
-        int max = arr[arr.length - 1];
-        return max;
+        double maxInt = Double.MIN_VALUE;
+        for (double number : arr){
+            if (number > maxInt) maxInt = number;
+        }
+        return maxInt;
     }
 
     /**
@@ -29,15 +29,16 @@ public class MathHelper {
      * @param arr   Int Array
      * @return      Min number
      */
-    public static int minimumInt(int arr[]){
+    public static double minInt(int arr[]){
 
         if (arr == null || arr.length == 0){
             throw new IllegalArgumentException("Array should not be empty");
         }
-
-        Arrays.sort(arr);
-        int min = arr[0];
-        return min;
+        double minInt = Double.MAX_VALUE;
+        for (double number : arr){
+            if (number < minInt) minInt = number;
+        }
+        return minInt;
     }
 
     /**
