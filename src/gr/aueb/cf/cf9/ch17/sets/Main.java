@@ -10,8 +10,8 @@ public class Main {
 
         // add - No duplicates allowed
         bag.add("apple");
-        bag.add("fruit");
-        bag.add("fruit2");
+        bag.add("kiwi");
+        bag.add("banana");
 
         if (bag.contains("apple")) {    //override equals
             bag.remove("apple");
@@ -19,6 +19,7 @@ public class Main {
             System.out.println("Not found");
         }
 
+        bag.removeIf(item -> item.startsWith("b"));
         bag.forEach(System.out::println);
     }
 }
