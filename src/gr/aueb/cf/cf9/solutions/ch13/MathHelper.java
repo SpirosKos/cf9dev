@@ -17,7 +17,7 @@ public class MathHelper {
             throw new IllegalArgumentException("Array should not be empty");
         }
 
-        double maxInt = Double.MIN_VALUE;
+        double maxInt = Integer.MIN_VALUE;
         for (double number : arr){
             if (number > maxInt) maxInt = number;
         }
@@ -34,7 +34,7 @@ public class MathHelper {
         if (arr == null || arr.length == 0){
             throw new IllegalArgumentException("Array should not be empty");
         }
-        double minInt = Double.MAX_VALUE;
+        double minInt = Integer.MAX_VALUE;
         for (double number : arr){
             if (number < minInt) minInt = number;
         }
