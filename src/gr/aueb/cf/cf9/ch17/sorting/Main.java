@@ -21,7 +21,7 @@ public class Main {
         products.sort(Comparator.comparing(Product::getPrice));
 //        products.sort((a,b) -> a.getQuantity() - b.getQuantity());    // Ascending order
         products.sort(Comparator.comparing(Product::getQuantity)
-                .thenComparing(Product::getPrice, Comparator.reverseOrder())    // price descending
+                .thenComparing(Product::getPrice , Comparator.reverseOrder())    // price descending
                 .thenComparing(Product::getDescription).reversed());            // the final-total result descend
     }
 }

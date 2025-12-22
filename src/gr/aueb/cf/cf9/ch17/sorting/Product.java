@@ -2,7 +2,7 @@ package gr.aueb.cf.cf9.ch17.sorting;
 
 public class Product implements Comparable<Product>{
     private String description;
-    private double price;
+    private double  price;
     private int quantity;
 
     public Product(){
