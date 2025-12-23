@@ -18,7 +18,7 @@ public class MainMap {
 
         var squares = numbers.stream()
                 .map(num -> num * num)      //Intermediate op
-                .toList();                         // Terminal op
+                .toList();                        // Terminal op
         squares.forEach(System.out::println);
 
         var listOfDescriptions = products.stream()
