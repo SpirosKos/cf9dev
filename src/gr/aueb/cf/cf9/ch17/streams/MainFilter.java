@@ -16,7 +16,7 @@ public class MainFilter {
                 .filter(num -> num % 2 == 0)     // Intermediate op
                 .forEach(System.out::println);          // terminal
 
-        List<Integer> evenNumbers = numbers.stream()
+        Iterable<Integer> evenNumbers = numbers.stream()
                 .filter(num -> num % 2 ==0)      // Intermediate op
                 .toList();                              // unmodifiable list
 
