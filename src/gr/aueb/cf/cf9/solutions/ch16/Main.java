@@ -15,9 +15,6 @@ public class Main {
 
 
         // Add to List
-        object.add("First");
-        object.add("Second");
-        object.add("Third");
         object.add(document);
         object.add(photo);
 
