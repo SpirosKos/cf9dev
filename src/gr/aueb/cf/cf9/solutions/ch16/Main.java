@@ -8,17 +8,12 @@ public class Main {
 
     static void main() {
 
-        // Declaration
+        // Declaration & Add
         List<Object> object = new ArrayList<>();
-        Printable document = new Document();
-        Printable photo = new Photo();
+        object.add(new Document());
+        object.add(new Photo());
 
-
-        // Add to List
-        object.add(document);
-        object.add(photo);
-
-        // Traverse and check instanceof Printable
+        // Traverse and check instanceof
         Runnable task = () -> {
             for (Object obj : object) {
                 if (obj instanceof Printable p) {
