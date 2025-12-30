@@ -4,13 +4,13 @@ import java.util.Objects;
 
 public class Account {
     private String iban;
-    private String balance;
+    private double balance;
 
     public Account(){
 
     }
 
-    public Account(String iban, String balance) {
+    public Account(String iban, double balance) {
         this.iban = iban;
         this.balance = balance;
     }
@@ -23,11 +23,11 @@ public class Account {
         this.iban = iban;
     }
 
-    public String getBalance() {
+    public double getBalance() {
         return balance;
     }
 
-    public void setBalance(String balance) {
+    public void setBalance(double balance) {
         this.balance = balance;
     }
 
