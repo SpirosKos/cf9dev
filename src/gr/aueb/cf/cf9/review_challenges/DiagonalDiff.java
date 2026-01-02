@@ -20,12 +20,9 @@ public class DiagonalDiff {
     public static int diagonalDiff(int arr[][]){
         int firstDiag = 0;
         int secondDiag = 0;
-        int j = 0;
-        int k = 0;
         for (int i =0; i < arr.length; i++) {
-            j = arr.length - 1;
             firstDiag += arr[i][i];
-            secondDiag += arr[i][j-i];
+            secondDiag += arr[i][arr.length- i - 1];
         }
         return Math.abs(firstDiag - secondDiag);
     }
