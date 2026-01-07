@@ -1,6 +1,10 @@
 package gr.aueb.cf.cf9.ch18.bankapp.dto;
 
 public record AccountInsertDTO(String iban, double balance) {
+
+     public static AccountInsertDTO empty() {
+         return new AccountInsertDTO("",0.0);
+     }
 }
 
 //public class AccountInsertDTO {
