@@ -3,14 +3,14 @@ package gr.aueb.cf.cf9.ch19;
 public class RegEx {
 
     public static void main(String[] args) {
-        String s = "Hello";
-        System.out.println(isHello(s));
+        String s = "Hello World";
+        System.out.println(reverse(s));
 
-        String s1 = ".4";
-        System.out.println(dotAndDigit(s1));
-
-        String s2 = "12/24/2009";
-        System.out.println(date(s2));
+//        String s1 = ".4";
+//        System.out.println(dotAndDigit(s1));
+//
+//        String s2 = "12/24/2009";
+//        System.out.println(date(s2));
     }
 
     public static boolean isHello(String s) {
@@ -60,5 +60,11 @@ public class RegEx {
         return s.matches("\\d{2}/\\d{2}/\\d{4}");
     }
 
+    public static boolean twoWords(String s ) {
+        return s.matches(".*\\s+.*");
+    }
 
+    public static String reverse(String s) {
+        return s.replaceAll("(.+)\\s(.+)","$2 $1"); // backreference - groups
+    }
 }
